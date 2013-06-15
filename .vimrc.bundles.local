@@ -1,0 +1,21 @@
+"" My Additional Bundles
+
+let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'php', 'ruby', 'python', 'go', 'twig', 'javascript', 'html', 'misc', 'scala']
+
+"" Javascript
+
+Bundle 'nono/vim-handlebars'
+
+"" HTML
+
+
+""Extras I like
+
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-endwise'
+Bundle 'node.js'
+"Bundle 'ctags.vim' -- majutsushi completes?
+Bundle 'ZenCoding.vim'
+
+
+
