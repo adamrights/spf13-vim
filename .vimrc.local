@@ -1,3 +1,4 @@
 colorscheme ir_black
 set history=30000
 call togglebg#map("<F5>")
+nnoremap <silent> <F9> :TagbarToggle<CR>
