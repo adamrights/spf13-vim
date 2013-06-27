@@ -1,13 +1,19 @@
-Bundle 'A-soft-mellow-color-scheme'
-"Bundle 'FindInNERDTree'
-"Bundle 'NERD_tree-Project'
-Bundle 'Railscasts-Theme-GUIand256color'
-"Bundle 'The-NERD-Commenter'
-"Bundle 'The-NERD-tree'
-"Bundle 'colors'
-Bundle 'colorv.vim'
-Bundle 'csv-color'
-Bundle 'galaxy.vim'
-"Bundle 'nerdtree-ack'
-"Bundle 'rails.vim'
-Bundle 'sexy-railscasts'
+"" Bundle groups for local dev machines to not break
+"" upstream compatibility
+let g:spf13_bundle_groups=['general', 'programming', 'php', 'ruby', 'python', 'go', 'twig', 'javascript', 'html', 'misc', 'scala']
+
+"" neocomplecache bundle removed for neocomplete as it's the faster
+"" option for vim users with +lua bundled, which my local dev machines do.
+Bundle 'Shougo/neocomplete'
+Bundle 'Shougo/neosnippet'
+Bundle 'honza/vim-snippets'
+
+Bundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
+
