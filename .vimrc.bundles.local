@@ -1,39 +1,22 @@
-"" Bundle groups for local dev machines to not break
-"" upstream compatibility
-
-let g:spf13_bundle_groups=['general', 'programming', 'php', 'ruby', 'python', 'go', 'twig', 'javascript', 'html', 'misc', 'scala']
-
-
-"" neocomplecache bundle removed for neocomplete as it's the faster
-"" option for vim users with +lua bundled, which my local dev machines do.
-Bundle 'Shougo/neocomplete'
-Bundle 'Shougo/neosnippet'
-Bundle 'honza/vim-snippets'
-
-Bundle 'Shougo/vimproc', {
-      \ 'build' : {
-      \     'windows' : 'make -f make_mingw32.mak',
-      \     'cygwin' : 'make -f make_cygwin.mak',
-      \     'mac' : 'make -f make_mac.mak',
-      \     'unix' : 'make -f make_unix.mak',
-      \    },
-      \ }
-
-
-
 "" Javascript
 Bundle 'nono/vim-handlebars'
+Bundle 'node.js'
 
 "" HTML
-
-
-""Extras I like
-
-Bundle 'tpope/vim-repeat'
-"Bundle 'tpope/vim-endwise'
-Bundle 'node.js'
-"Bundle 'ctags.vim' -- majutsushi completes?
+Bundle 'colorv.vim'
 Bundle 'ZenCoding.vim'
 
-
-
+""Extras I like
+Bundle 'tpope/vim-repeat'
+Bundle 'A-soft-mellow-color-scheme'
+Bundle 'Railscasts-Theme-GUIand256color'
+Bundle 'csv-color'
+Bundle 'galaxy.vim'
+Bundle 'sexy-railscasts'
+"Bundle 'tpope/vim-endwise'  -- broken atm.
+"Bundle 'nerdtree-ack'
+"Bundle 'The-NERD-tree'
+"Bundle 'The-NERD-Commenter'
+"Bundle 'colors'
+"Bundle 'NERD_tree-Project'
+"Bundle 'FindInNERDTree'
