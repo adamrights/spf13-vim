@@ -7,6 +7,7 @@ Bundle 'colorv.vim'
 Bundle 'ZenCoding.vim'
 
 ""Extras I like
+Bundle 'mattn/gist-vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'A-soft-mellow-color-scheme'
 Bundle 'Railscasts-Theme-GUIand256color'

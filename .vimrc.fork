@@ -1,6 +1,8 @@
 let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
 
+"Set Gist to copy to cliboard on '-c' switch.
+let g:gist_clip_command = 'xclip -selection clipboard'
 
 ""Note This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.

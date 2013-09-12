@@ -1,12 +1,10 @@
-"" Bundle groups for local dev machines to not break
-"" upstream compatibility
-let g:spf13_bundle_groups=['general', 'programming', 'php', 'ruby', 'python', 'go', 'twig', 'javascript', 'html', 'misc', 'scala', 'neocomplete']
+"" Bundle groups for local dev machines to not break upstream compatibility
 
-"" neocomplecache bundle removed for neocomplete as it's the faster
-"" option for vim users with +lua bundled, which my local dev machines do.
-Bundle 'Shougo/neocomplete'
-Bundle 'Shougo/neosnippet'
-Bundle 'honza/vim-snippets'
+let g:spf13_bundle_groups=['general', 'neocomplete', 'programming', 'php', 'ruby', 'python', 'go', 'twig', 'javascript', 'html', 'misc', 'scala', ]
+
+" neocomplecache bundle removed for neocomplete as it's the faster
+" option for vim users with +lua bundled, which my local dev machines do.
+
 "needed for vimshell
 Bundle 'Shougo/vimproc', {
       \ 'build' : {
@@ -18,4 +16,3 @@ Bundle 'Shougo/vimproc', {
       \ }
 Bundle 'Shougo/vimshell.vim'
 Bundle 'Shougo/context_filetype.vim'
-
