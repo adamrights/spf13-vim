@@ -1,6 +1,22 @@
 let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
 
+"Syntastic Syntax Checkers for Fork.
+let g:syntastic_check_on_open=1 "check when buffer loads
+let g:syntastic_always_populate_loc_list=1 " stick errors in loc_list
+
+let g:syntastic_less_checkers = ['less-lint']
+let g:syntastic_ruby_checkers = ['mri']
+let g:syntastic_html_checkers = ['w3', 'tidy', 'validator']
+let g:syntastic_css_checkers = ['csslint', 'prettycss']
+let g:syntastic_haml_checkers = ['haml']
+let g:syntastic_sass_checkers = ['sass']
+let g:syntastic_zsh_checkers = ['zsh']
+let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_json_checkers = ['jsonlint']
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+let g:syntastic_javscript_checkers = ['jshint']
+let g:syntastic_javascript_jshint_exec = 'jshint'
 "Set Gist to copy to cliboard on '-c' switch.
 let g:gist_clip_command = 'xclip -selection clipboard'
 

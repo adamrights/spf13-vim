@@ -6,6 +6,8 @@ call togglebg#map("<F5>")
 
 nnoremap <silent> <F9> :TagbarToggle<CR>
 
+let g:syntastic_javascript_jshint_exec='/home/adam/.nvm/v0.11.6/bin/jshint'
+
 " neocomplecache spf-vim-13 .vimrc settings converted to neocomplete
     " neocomplete {
         if count(g:spf13_bundle_groups, 'neocomplete')
